@@ -49,7 +49,7 @@ EOF
     echo '127.0.0.1 otherexample.com' | sudo tee -a /etc/hosts
     chown vagrant:vagrant /home/vagrant/.config/.saltcorn
     chmod 600 /home/vagrant/.config/.saltcorn
-    sudo -iu vagrant git clone https://github.com/saltcorn/saltcorn.git
+    sudo -iu vagrant git clone git@github.com:saltcorn/saltcorn.git
     echo 'export PATH=/home/vagrant/saltcorn/packages/saltcorn-cli/bin:$PATH' >> /home/vagrant/.bashrc
     sudo -iu vagrant bash -c "cd saltcorn && git checkout fix-pytest"   
     sudo -iu vagrant bash -c "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true cd saltcorn && npm install --legacy-peer-deps && npm install --legacy-peer-deps && npm run tsc"

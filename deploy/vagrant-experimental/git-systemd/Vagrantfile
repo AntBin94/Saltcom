@@ -46,7 +46,7 @@ Vagrant.configure("2") do |config|
 EOF
     chown vagrant:vagrant /home/vagrant/.config/.saltcorn
     chmod 600 /home/vagrant/.config/.saltcorn
-    sudo -iu vagrant git clone https://github.com/saltcorn/saltcorn.git
+    sudo -iu vagrant git clone git@github.com:saltcorn/saltcorn.git
     sudo -iu vagrant bash -c "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true cd saltcorn && npm install --legacy-peer-deps && npm install --legacy-peer-deps && npm run tsc"
        cat <<EOF > /lib/systemd/system/saltcorn.service
    [Unit]

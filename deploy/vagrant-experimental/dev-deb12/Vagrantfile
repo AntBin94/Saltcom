@@ -22,7 +22,7 @@ Vagrant.configure("2") do |config|
     set -e
     apt update    
     apt install -qqy nodejs npm
-    sudo -iu vagrant git clone https://github.com/saltcorn/saltcorn.git
+    sudo -iu vagrant git clone git@github.com:saltcorn/saltcorn.git
     cd /home/vagrant/saltcorn/packages/install/
     sudo -u vagrant git checkout node-18
     sudo -u vagrant npm install

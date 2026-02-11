@@ -22,7 +22,7 @@ Vagrant.configure("2") do |config|
     set -e
     wget -qO - https://deb.nodesource.com/setup_16.x | bash -
     apt-get install -qqy nodejs
-    sudo -iu vagrant git clone https://github.com/saltcorn/saltcorn.git
+    sudo -iu vagrant git clone git@github.com:saltcorn/saltcorn.git
     cd /home/vagrant/saltcorn/packages/install/
     sudo -u vagrant npm install
     sudo -u vagrant node index.js -y
