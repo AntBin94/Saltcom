@@ -128,3 +128,5 @@ package-lock.json
 !/package-lock.json
 plugins_folder/
 plugins-local/node_modules/
+
+plugins-local/node_modules/
