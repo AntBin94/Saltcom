@@ -127,8 +127,8 @@ package-lock.json
 !packages/saltcorn-builder/package-lock.json
 !/package-lock.json
 plugins_folder/
-plugins-local/node_modules/
 
-plugins-local/node_modules/
+plugins-local/cookieconsent/0.1.1/node_modules
 
-plugins-local/node_modules/
+# Ignoramos la carpeta creada a raiz de instalar el nuevo módulo en local
+plugins-local/cookieconsent/0.1.1/
