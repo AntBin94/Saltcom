@@ -1,0 +1,3 @@
+[submodule "plugins-local/cookieconsent"]
+	path = plugins-local/cookieconsent
+	url = ../CookieConsent
