@@ -22,9 +22,9 @@ services:
       - traefik.http.routers.saltcorn-app.rule=Host(`saltcorn.${DOMAIN}`)
       - traefik.http.routers.saltcorn-app.entrypoints=secure
       - traefik.http.routers.saltcorn-app.tls.certresolver=leresolver
-      - traefik.http.services.saltcorn-app.loadbalancer.server.port=3000
+      - traefik.http.services.saltcorn-app.loadbalancer.server.port=3000móduoduloduloapp
       - traefik.enable=true
-    
+
   saltcorn-db:
     image: postgres:13-alpine
     container_name: saltcorn-db

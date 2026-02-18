@@ -130,7 +130,4 @@ plugins_folder/
 
 plugins-local/cookieconsent/0.1.1/node_modules
 
-# Ignoramos la carpeta creada a raiz de instalar el nuevo módulo en local
-plugins-local/cookieconsent/0.1.1/
 
-plugins-local/node_modules/
